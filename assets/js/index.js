@@ -2,7 +2,7 @@
   //
   // 定義
   //
-  const linkParent = document.querySelectorAll(".link-parent");
+  const jsAccordion = document.querySelectorAll(".js-accordionParent");
   const mediaQuery = window.matchMedia("(min-width: 640px)");
 
   //
@@ -35,7 +35,7 @@
   };
 
   const mediaToggleChildrenSP = () => {
-    linkParent.forEach((elem) => {
+    jsAccordion.forEach((elem) => {
       const parent = elem.parentElement;
       const children = parent.nextElementSibling;
 
@@ -45,7 +45,7 @@
   };
 
   const mediaToggleChildrenPC = () => {
-    linkParent.forEach((elem) => {
+    jsAccordion.forEach((elem) => {
       const parent = elem.parentElement;
       const children = parent.nextElementSibling;
       const child = children.querySelectorAll("div");
@@ -59,7 +59,7 @@
   //
   // イベント付与
   //
-  linkParent.forEach((elem) => {
+  jsAccordion.forEach((elem) => {
     elem.addEventListener("click", (e) => {
       e.preventDefault();
       toggleChildren(e);
