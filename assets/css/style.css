@@ -420,8 +420,11 @@ footer > div {
   }
   .visual {
     padding: 0;
-    margin-top: 231px;
+    margin-top: 0;
+    padding-top: 231px;
     margin-bottom: 64px;
+    width: 100vw;
+    overflow-x: hidden;
   }
   .visual__container > img {
     min-width: 822px;
